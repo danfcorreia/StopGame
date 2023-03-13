@@ -1,0 +1,42 @@
+escoher as categorias das questoes
+os jogadores vao ter de ter um score (?)
+implementar a logica para uma ronda
+repetir a logica de uma ronda ate que os pontos sejas o limte para ganhar
+
+
+
+
+
+
+
+
+1- escolher uma letra x
+2- começar a ronda (thread round ?)
+        (IDEIAS)
+        Menu para escolher a qual queres responder
+        E uma opção "acabei"
+        Se escreveu em todas as opçoes stop!
+
+
+    2.1 - SOUT round start with letter "X"
+ |---2.2 - Get awnsers from clients
+ |   2.3 - If one ends stop all
+ |   2.4 - collect all the awnsers to an Array (player awnsers or categories sorted)
+ |   2.5 - display the awnsers for all
+ |   2.6 - menu to rat on someone based on clients.getname
+ |   2.7 - atribute points
+ |
+ |
+ |
+\ /
+ Client side:
+    on loop until anyone finishes
+        -menu for choosing what categorie you wanna awnser
+        -keep awnsers in a String
+        -if players says he finished the round check all awnsers
+        -if all awnsered STOP
+        -if not awnsered wait until STOP
+        -reset all strings
+        -start again
+
+
