@@ -173,15 +173,11 @@ public class Client implements Runnable{
                 } catch (InterruptedException e) {
                     throw new RuntimeException(e);
                 }
-               //System.out.println("inside game waiting");
+
             }
             chooseAnswers(currentLetter);
 
             System.out.println("Need score");
-
         }
-
-
-       // System.out.println("client ended run");
     }
 }

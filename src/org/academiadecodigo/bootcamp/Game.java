@@ -61,12 +61,9 @@ public class Game implements Runnable {
 
     private ArrayList<ArrayList<String>> answerCheck(ArrayList<ArrayList<String>> array, String letter) {
         for (int i = 0; i < array.size(); i++) {
-            //writeForVar("in for i");
             for (int j = 0; j < 4; j++) {
-                //writeForVar("in for j");
                 String letterCheck = (array.get(i)).get(j);
                 if (!letterCheck.toLowerCase().startsWith(letter.toLowerCase())) {
-                    //writeForVar("changing invalid");
                     (array.get(i)).remove(j);
                     (array.get(i)).add(j, "NotValid");
                 }
@@ -111,7 +108,7 @@ public class Game implements Runnable {
 
         var.init();
 
-        for (Client client : clients) { // PASSAMOS A LETRA DA RONDA PARA TODOS OS CLIENTES
+        for (Client client : clients) { //SENDS LETTER TO EVERY CLIENT
             client.gameWaiting = false;
             client.setCurrentLetter(letter.toString());
         }

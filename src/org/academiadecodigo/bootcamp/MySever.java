@@ -10,7 +10,7 @@ public class MySever {
     ServerSocket serverSocket;
     AcceptedClients acceptedClients = new AcceptedClients();
     ArrayList<Client> clients = new ArrayList<>();
-    static int maxPlayers = 3; // MUDAR COM ARGUMENTOS COM MAX 11 MIN 3
+    static int maxPlayers = 3; // MAX 11 MIN 3
     boolean isServerReady = false;
     static int port = 7777;
 
@@ -52,7 +52,7 @@ public class MySever {
                     Socket currentClientSocket = serverSocket.accept();
                     clients.add(new Client(currentClientSocket));
 
-                    Thread clientThread = new Thread(clients.get(clients.size()-1));//colocar cliente
+                    Thread clientThread = new Thread(clients.get(clients.size()-1));//ADDING CLIENTS
                     clientThread.start();
 
                 } catch (IOException e){
